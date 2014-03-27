@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Not Tetris</title>
+  <script src="/js/libs/jquery.min.js"></script>
+  <script src="/js/libs/d3.min.js"></script>
+  <link href="/css/game.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="topscores"></div>
+  <p>Score: <span id="score">0</span> <span id="status"></span></p>
+  <div id="board"></div>
+  <div id="nextshape"></div>
+  <script type="text/javascript">
+  var element = $('#topscores');
+  $.get('/scores', function(data) {
+    element.html(data);
+  });
+  </script>
+  <script src="/js/client.js"></script>
+</body>
+</html>

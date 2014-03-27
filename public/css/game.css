@@ -1,0 +1,13 @@
+#nextshape svg, #board svg {
+  background-color: #000;
+  float: left;
+}
+
+#nextshape svg {
+  margin-left: 28px;
+}
+
+#status {
+  font-weight: bold;
+  color: red;
+}
